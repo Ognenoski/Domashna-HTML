@@ -1,0 +1,83 @@
+<html lang="mk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava</title>
+    <link rel="icon" href="logo.png">
+</head>
+
+<body style="height: 2000px;">
+
+    <h2>ГОДИШНА ДАНОЧНА ПРИЈАВА
+        за утврдување на данокот на личен доход</h2>
+
+    <form action="">
+        <label for="embg">ЕМБГ:</label>
+        <input id="embg" name="embg" type="text" pattern="[0-9]{13}" maxlength="13" inputmode="numeric" required
+            title="Внесете 13 цифри за ЕМБГ.">
+        <br><br>
+        <label for="name">Име и презиме:</label>
+        <input id="name" name="name" type="text" required>
+        <br><br>
+        <label for="adresse">Адреса на живеење:</label>
+        <input id="adresse" name="adresse" type="text" required>
+        <br><br>
+        <label for="telefon">Телефон:</label>
+        <input id="telefon" name="telefon" type="number" step="0.01" required>
+        <br><br>
+        <label for="email">Е-маил:</label>
+        <input id="email" name="email" type="email" required>
+        <br><br>
+
+        <p><b>За корекција на пополнетите податоци внесете ги точните износи во празните полиња под податоците пополнети
+                од Управата за јавни приходи, а во спротивно оставете ги непополнети.</b>
+        </p>
+    </form>
+    <fieldset>
+        <legend><b><i>ОСТВАРЕН ДОХОД</i></b></legend>
+        <table border="1">
+            <tr>
+                <th>Вид на доход</th>
+                <th>Доход</th>
+                <th>Износ</th>
+            </tr>
+            <tr>
+                <td>Плата</td>
+                <td><input type="text"></td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+                <td>Дивиденда</td>
+                <td><input type="text"></td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+                <td>Капитална добивка</td>
+                <td><input type="text"></td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+                <td>Друг доход</td>
+                <td><input type="text"></td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+
+                <td colspan="2"><b>Вкупен износ на остварениот доход</b></td>
+                <td><input type="number" step="0.01"></td>
+
+        </table>
+    </fieldset>
+    <br><br><br><br><br>
+    <label for="">Датум на поднесување на пријавата:</label>
+    <input type="date"> 
+    <br><br>
+    <label><p>Потпис на поднесител</p></label><br>
+    <hr style="border: 1px solid black; width: 200px; text-align: left; margin-left: 0;">
+
+    
+    <br><br>
+    <input type="submit" value="ПОДНЕСИ ПРИЈАВА">
+    <input type="reset" value="ИСПРАЗНИ ФОРМА">
+    <br>
